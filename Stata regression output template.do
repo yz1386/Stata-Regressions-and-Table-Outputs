@@ -1,4 +1,5 @@
-*A Stata output template    @author: Dr. You Zhou, Leeds University Business School
+*A Stata output template    
+*@author: Dr. You Zhou, Leeds University Business School, University of Leeds
 
 *install commands first
 ssc install outreg2,replace
@@ -239,4 +240,5 @@ reg total_asset_lead1 $my_var1  $my_control1
 outreg2 using myreg3.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 2)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
 reg total_asset_lead1 $my_var1  $my_control2
 outreg2 using myreg3.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 3)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
+
 
